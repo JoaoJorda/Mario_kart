@@ -190,7 +190,7 @@ async function declareWinner(character1, character2){
 }
 
 (async function main(){
-    console.log(`🏁🚨 Corrida entre ${player3.NOME} e ${player5.NOME} começando...\n `);
+    console.log(`🏁🚨 Corrida entre ${player3.NOME} e ${player5.NOME} 💾começando...\n `);
 
     await playRaceEngine(player3, player5);
     await declareWinner(player3,player5);
