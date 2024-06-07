@@ -1,39 +1,39 @@
-const player1 = {
+const mario = {
     NOME: "Mario",
     VELOCIDADE: 4,
     MANOBRABILIDADE: 3,
     PODER: 3,
     PONTOS: 0,
 };
-const player2 = {
+const peach = {
     NOME: "Peach",
     VELOCIDADE: 3,
     MANOBRABILIDADE: 4,
     PODER: 2,
     PONTOS: 0,
 };
-const player3 = {
+const yoshi = {
     NOME: "Yoshi",
     VELOCIDADE: 2,
     MANOBRABILIDADE: 4,
     PODER: 3,
     PONTOS: 0,
 };
-const player4 = {
+const bowser = {
     NOME: "Bowser",
     VELOCIDADE: 5,
     MANOBRABILIDADE: 2,
     PODER: 5,
     PONTOS: 0,
 };
-const player5 = {
+const Luigi = {
     NOME: "Luigi",
     VELOCIDADE: 3,
     MANOBRABILIDADE: 4,
     PODER: 4,
     PONTOS: 0,
 };
-const player6 = {
+const donkey_kong = {
     NOME: "Donkey Kong",
     VELOCIDADE: 2,
     MANOBRABILIDADE: 2,
@@ -190,10 +190,10 @@ async function declareWinner(character1, character2){
 }
 
 (async function main(){
-    console.log(`🏁🚨 Corrida entre ${player3.NOME} e ${player5.NOME} 💾começando...\n `);
+    console.log(`🏁🚨 Corrida entre ${mario.NOME} e ${yoshi.NOME} começando...\n `);
 
-    await playRaceEngine(player3, player5);
-    await declareWinner(player3,player5);
+    await playRaceEngine(mario, yoshi);
+    await declareWinner(mario,yoshi);
     
 })();
 
